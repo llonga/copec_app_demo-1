@@ -20,5 +20,10 @@
   <%= @gas_station.id_station %>
 </p>
 
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @gas_station.avatar if @gas_station.avatar.attached? %>
+</p>
+
 <%= link_to 'Edit', edit_gas_station_path(@gas_station) %> |
 <%= link_to 'Back', gas_stations_path %>
